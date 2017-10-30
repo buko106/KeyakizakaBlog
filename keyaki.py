@@ -22,7 +22,7 @@ class Keyaki:
         try:
             id = str(int(id))
         except ValueError:
-            print("Invalid id in getDiaryDetail")
+            print("Invalid id in get_diary_detail")
             raise
 
         url = self.ENTRYPOINT_DIARY_DETAIL + id
