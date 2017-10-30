@@ -34,6 +34,21 @@ class Keyaki:
         response = self.get(url, params=params)
         return response
 
+    def get_artist(self, ct):
+        try:
+            ct = "%02d" % int(ct)
+        except ValueError:
+            print("Invalid ct in artist")
+            raise
+
+        url = self.ENTRYPOINT_ARTIST + ct
+        params = {
+            "ima": "0000",
+        }
+
+        response = self.get(url, params=params)
+        return response
+
     def parse_diary_detail(self, response):
         soup = self.text_to_soup(response.text)
         box_article = soup.find(attrs={"class": "box-article"})
@@ -60,8 +75,65 @@ class Keyaki:
             "id": id,
         }
 
+    def parse_artist(self, response):
+        soup = self.text_to_soup(response.text)
+        box_profile_img = soup.find(attrs={"class": "box-profile_img"})
+        box_profile_text = soup.find(attrs={"class": "box-profile_text"})
+        box_info = soup.find(attrs={"class": "box-info"})
+        dls = box_info.find_all("dl")
+
+        profile_img_url = box_profile_img.img["src"]
+        furigana = box_profile_text.find(
+            attrs={"class": "furigana"}
+        ).string.strip()
+        en = box_profile_text.find(
+            attrs={"class": "en"}
+        ).string.strip().replace("\u3000", " ")
+        jp_to_en = {
+            "生年月日": "birthday",
+            "血液型": "blood_type",
+            "身長": "height",
+            "出身地": "birthplace",
+            "星座": "constellation",
+        }
+
+        dl_dict = {}
+        for dl in dls:
+            dd = dl.find("dd").string.strip().rstrip(":")
+            key = jp_to_en.get(dd, dd)  # convert to english if possible.
+            dt = dl.find("dt").string.strip()
+            dl_dict[key] = dt
+
+        return {
+            **dl_dict,
+            "profile_img_url": profile_img_url,
+            "furigana": furigana,
+            "en": en,
+        }
+
+    def get_artists_profile(self, max_ct):
+        profiles = {}
+        for i in range(1, max_ct+1):
+            ct = "%02d" % i
+            try:
+                member = keyaki.parse_artist(keyaki.get_artist(ct))
+                profiles[ct] = member
+            except Exception as e:
+                print(e)
+        return profiles
+
+    def dump_as_json(self, data, path=None):
+        import json
+        kwargs = {"indent": 2, "ensure_ascii": False, "sort_keys": True}
+        if path:
+            return json.dump(data, open(path, "wt"), **kwargs)
+        else:
+            return json.dumps(data, **kwargs)
+
 if __name__ == "__main__":
     keyaki = Keyaki()
     resp = keyaki.get_diary_detail(sys.argv[1])
     detail = keyaki.parse_diary_detail(resp)
     print(sorted(detail.items()))
+
+    keyaki.dump_as_json(keyaki.get_artists_profile(42), "members.json")

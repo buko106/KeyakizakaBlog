@@ -1,0 +1,412 @@
+{
+  "01": {
+    "birthday": "1997年5月7日",
+    "birthplace": "宮城",
+    "blood_type": "A型",
+    "constellation": "おうし座",
+    "en": "NIJIKA ISHIMORI",
+    "furigana": "いしもり にじか",
+    "height": "162cm",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/168/b51cc7e86bf4bc71ded87eba89e9f/400_320_102400.jpg"
+  },
+  "02": {
+    "birthday": "1998年9月30日",
+    "birthplace": "神奈川",
+    "blood_type": "O型",
+    "constellation": "てんびん座",
+    "en": "YUI IMAIZUMI",
+    "furigana": "いまいずみ ゆい",
+    "height": "154cm",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/763/cb11e06a172d028029fe0cc4911f7/400_320_102400.jpg"
+  },
+  "03": {
+    "birthday": "1997年1月4日",
+    "birthplace": "千葉",
+    "blood_type": "O型",
+    "constellation": "やぎ座",
+    "en": "RINA UEMURA",
+    "furigana": "うえむら りな",
+    "height": "152.5cm",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/46a/31ca4fd5e39e0bcce1b776cef1f89/400_320_102400.jpg"
+  },
+  "04": {
+    "birthday": "1997年10月7日",
+    "birthplace": "神奈川",
+    "blood_type": "O型",
+    "constellation": "てんびん座",
+    "en": "RIKA OZEKI",
+    "furigana": "おぜき りか",
+    "height": "155cm",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/33b/a064b09a8d59660ae060cda339bcf/400_320_102400.jpg"
+  },
+  "05": {
+    "birthday": "1998年6月4日",
+    "birthplace": "静岡",
+    "blood_type": "O型",
+    "constellation": "ふたご座",
+    "en": "NANA ODA",
+    "furigana": "おだ なな",
+    "height": "161.1cm",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/c2a/a3cbe12c5bce2143e16ee14af3f36/400_320_102400.jpg"
+  },
+  "06": {
+    "birthday": "1998年11月14日",
+    "birthplace": "兵庫",
+    "blood_type": "B型",
+    "constellation": "さそり座",
+    "en": "MINAMI KOIKE",
+    "furigana": "こいけ みなみ",
+    "height": "159cm",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/d3b/d0e563efc1a7d4025b7d132856422/400_320_102400.jpg"
+  },
+  "07": {
+    "birthday": "1999年10月23日",
+    "birthplace": "埼玉",
+    "blood_type": "A型",
+    "constellation": "てんびん座",
+    "en": "YUI KOBAYASHI",
+    "furigana": "こばやし ゆい",
+    "height": "160cm",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/dee/a8a486ed511a13ab15a319f17452b/400_320_102400.jpg"
+  },
+  "08": {
+    "birthday": "1998年2月15日",
+    "birthplace": "東京",
+    "blood_type": "O型",
+    "constellation": "みずがめ座",
+    "en": "FUYUKA SAITO",
+    "furigana": "さいとう ふゆか",
+    "height": "157cm",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/56e/333b5874719a366bcbfb1d7513518/400_320_102400.jpg"
+  },
+  "09": {
+    "birthday": "1996年11月16日",
+    "birthplace": "東京",
+    "blood_type": "A型",
+    "constellation": "さそり座",
+    "en": "SHIORI SATO",
+    "furigana": "さとう しおり",
+    "height": "162cm",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/f7d/a2e37426e56fb5a7ca82186415e51/400_320_102400.jpg"
+  },
+  "10": {
+    "birthday": "1998年11月23日",
+    "birthplace": "新潟",
+    "blood_type": "A型",
+    "constellation": "いて座",
+    "en": "MANAKA SHIDA",
+    "furigana": "しだ まなか",
+    "height": "165cm",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/055/3cf92c3fad1106ada95e902c2b923/400_320_102400.jpg"
+  },
+  "11": {
+    "birthday": "1995年11月29日",
+    "birthplace": "東京",
+    "blood_type": "AB型",
+    "constellation": "いて座",
+    "en": "YUUKA SUGAI",
+    "furigana": "すがい ゆうか",
+    "height": "163.5cm",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/74a/3562d2ba1c40c28107e07ca7b9d8c/400_320_102400.jpg"
+  },
+  "12": {
+    "birthday": "1997年12月5日",
+    "birthplace": "愛知",
+    "blood_type": "AB型",
+    "constellation": "いて座",
+    "en": "MIYU SUZUMOTO",
+    "furigana": "すずもと みゆ",
+    "height": "155cm",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/f6b/ff97aa065ad6906797bdf6706b9e8/400_320_102400.jpg"
+  },
+  "13": {
+    "birthday": "1997年4月23日",
+    "birthplace": "山形",
+    "blood_type": "A型",
+    "constellation": "おうし座",
+    "en": "NANAKO NAGASAWA",
+    "furigana": "ながさわ ななこ",
+    "height": "158cm",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/304/da078c81613267574788d8892c292/400_320_102400.jpg"
+  },
+  "14": {
+    "birthday": "1997年7月7日",
+    "birthplace": "東京",
+    "blood_type": "A型",
+    "constellation": "かに座",
+    "en": "MIZUHO HABU",
+    "furigana": "はぶ みづほ",
+    "height": "171cm",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/648/243aae3c20046c039a0c14a67cefb/400_320_102400.jpg"
+  },
+  "15": {
+    "birthday": "2000年5月7日",
+    "birthplace": "東京",
+    "blood_type": "AB型",
+    "constellation": "おうし座",
+    "en": "AOI HARADA",
+    "furigana": "はらだ あおい",
+    "height": "156cm",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/771/a65548198fcdb14d2067d27a78286/400_320_102400.jpg"
+  },
+  "17": {
+    "birthday": "2001年6月25日",
+    "birthplace": "愛知",
+    "blood_type": "O型",
+    "constellation": "かに座",
+    "en": "YURINA HIRATE",
+    "furigana": "ひらて ゆりな",
+    "height": "160.2cm",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/524/4678d5375c4f0eccec2f7a49e9204/400_320_102400.jpg"
+  },
+  "18": {
+    "birthday": "1997年11月12日",
+    "birthplace": "宮城",
+    "blood_type": "A型",
+    "constellation": "さそり座",
+    "en": "AKANE MORIYA",
+    "furigana": "もりや あかね",
+    "height": "163cm",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/d9f/c0a380f9276a3077d5d7c2c42de6b/400_320_102400.jpg"
+  },
+  "19": {
+    "birthday": "2000年2月24日",
+    "birthplace": "大阪",
+    "blood_type": "B型",
+    "constellation": "うお座",
+    "en": "NANAMI YONETANI",
+    "furigana": "よねたに ななみ",
+    "height": "157cm",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/0d8/c31b1769e595eff821961893deb0d/400_320_102400.jpg"
+  },
+  "20": {
+    "birthday": "1995年5月16日",
+    "birthplace": "茨城",
+    "blood_type": "O型",
+    "constellation": "おうし座",
+    "en": "RIKA WATANABE",
+    "furigana": "わたなべ りか",
+    "height": "165cm",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/1a1/9df0868dae03bf354aaedd16f8476/400_320_102400.jpg"
+  },
+  "21": {
+    "birthday": "1998年7月27日",
+    "birthplace": "茨城",
+    "blood_type": "O型",
+    "constellation": "しし座",
+    "en": "RISA WATANABE",
+    "furigana": "わたなべ りさ",
+    "height": "163cm",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/508/8635d35e18dfd73e974667f459a5c/400_320_102400.jpg"
+  },
+  "22": {
+    "birthday": "1998年9月4日",
+    "birthplace": "長崎",
+    "blood_type": "O型",
+    "constellation": "おとめ座",
+    "en": "NERU NAGAHAMA",
+    "furigana": "ながはま ねる",
+    "height": "157cm",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/09f/2d2ad94141c486ee00d2353c4edd3/400_320_102400.jpg"
+  },
+  "23": {
+    "birthday": "1995年11月10日",
+    "birthplace": "新潟",
+    "blood_type": "AB型",
+    "constellation": "さそり座",
+    "en": "MAO IGUCHI",
+    "furigana": "いぐち まお",
+    "height": "163cm",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/c30/695c65ac25c6f6feef42b255f9bd5/400_320_102400.jpg"
+  },
+  "24": {
+    "birthday": "1997年12月26日",
+    "birthplace": "神奈川",
+    "blood_type": "O型",
+    "constellation": "やぎ座",
+    "en": "SARINA USHIO",
+    "furigana": "うしお さりな",
+    "height": "157cm",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/635/e6ac7704e7e57e5ad1fbd34cb70ab/400_320_102400.jpg"
+  },
+  "25": {
+    "birthday": "2001年12月2日",
+    "birthplace": "長野",
+    "blood_type": "A型",
+    "constellation": "いて座",
+    "en": "MEMI KAKIZAKI",
+    "furigana": "かきざき めみ",
+    "height": "156cm",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/84d/8921acdb2ec39d148439dbbaa26e4/400_320_102400.jpg"
+  },
+  "26": {
+    "birthday": "2001年5月8日",
+    "birthplace": "東京",
+    "blood_type": "O型",
+    "constellation": "おうし座",
+    "en": "YUKA KAGEYAMA",
+    "furigana": "かげやま ゆうか",
+    "height": "154cm",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/e08/535c73814c955a355d0aed313ccd8/400_320_102400.jpg"
+  },
+  "27": {
+    "birthday": "1998年2月2日",
+    "birthplace": "東京",
+    "blood_type": "A型",
+    "constellation": "みずがめ座",
+    "en": "SHIHO KATO",
+    "furigana": "かとう しほ",
+    "height": "159cm",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/fe5/8d8119cddc7720f355723fde211c0/400_320_102400.jpg"
+  },
+  "28": {
+    "birthday": "1997年9月5日",
+    "birthplace": "東京",
+    "blood_type": "A型",
+    "constellation": "おとめ座",
+    "en": "KYOKO SAITO",
+    "furigana": "さいとう きょうこ",
+    "height": "155cm",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/53c/11b3b2d4d1550d5f01eef2d86a76e/400_320_102400.jpg"
+  },
+  "29": {
+    "birthday": "1996年1月22日",
+    "birthplace": "千葉",
+    "blood_type": "O型",
+    "constellation": "みずがめ座",
+    "en": "KUMI SASAKI",
+    "furigana": "ささき くみ",
+    "height": "166cm",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/e2d/c18e5e03fc1cdfb18e32680d2b8d1/400_320_102400.jpg"
+  },
+  "30": {
+    "birthday": "1999年12月17日",
+    "birthplace": "兵庫",
+    "blood_type": "O型",
+    "constellation": "いて座",
+    "en": "MIREI SASAKI",
+    "furigana": "ささき みれい",
+    "height": "163cm",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/140/e5deea9704151f359cad0c2fc13a5/400_320_102400.jpg"
+  },
+  "31": {
+    "birthday": "1998年9月20日",
+    "birthplace": "大阪",
+    "blood_type": "A型",
+    "constellation": "おとめ座",
+    "en": "MANA TAKASE",
+    "furigana": "たかせ まな",
+    "height": "157cm",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/d72/103ece60efdcb61819cd7dcfb75d0/400_320_102400.jpg"
+  },
+  "32": {
+    "birthday": "1998年11月2日",
+    "birthplace": "神奈川",
+    "blood_type": "B型",
+    "constellation": "さそり座",
+    "en": "AYAKA TAKAMOTO",
+    "furigana": "たかもと あやか",
+    "height": "160cm",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/f3f/3858e1d6566979ba7105939b3ea7f/400_320_102400.jpg"
+  },
+  "33": {
+    "birthday": "1998年8月23日",
+    "birthplace": "奈良",
+    "blood_type": "O型",
+    "constellation": "おとめ座",
+    "en": "MEI HIGASHIMURA",
+    "furigana": "ひがしむら めい",
+    "height": "153cm",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/cf6/c7a802ec277f7c27a3e9cb1b4ce58/400_320_102400.jpg"
+  },
+  "34": {
+    "birthday": "2002年9月10日",
+    "birthplace": "埼玉",
+    "blood_type": "O型",
+    "constellation": "おとめ座",
+    "en": "MIKU KANEMURA",
+    "furigana": "かねむら みく",
+    "height": "",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/497/dde775fd90dd57c58c2795f7acbbc/400_320_102400.jpg"
+  },
+  "35": {
+    "birthday": "2001年7月23日",
+    "birthplace": "山口",
+    "blood_type": "B型",
+    "constellation": "しし座",
+    "en": "HINA KAWATA",
+    "furigana": "かわた ひな",
+    "height": "",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/633/fe9d1174c64eae65a95308f11e455/400_320_102400.jpg"
+  },
+  "36": {
+    "birthday": "2002年9月7日",
+    "birthplace": "大阪",
+    "blood_type": "O型",
+    "constellation": "おとめ座",
+    "en": "NAO KOSAKA",
+    "furigana": "こさか なお",
+    "height": "",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/df6/5b892ded8fa1c1a91f0b56feaea8f/400_320_102400.jpg"
+  },
+  "37": {
+    "birthday": "2001年1月18日",
+    "birthplace": "神奈川",
+    "blood_type": "A型",
+    "constellation": "やぎ座",
+    "en": "SUZUKA TOMITA",
+    "furigana": "とみた すずか",
+    "height": "",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/5ba/08290e9ebce505ea346b6faccf9c8/400_320_102400.jpg"
+  },
+  "38": {
+    "birthday": "2001年2月15日",
+    "birthplace": "埼玉",
+    "blood_type": "AB型",
+    "constellation": "みずがめ座",
+    "en": "AKARI NIBU",
+    "furigana": "にぶ あかり",
+    "height": "",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/b3f/fa9dc9a18996ee6379104928aa280/400_320_102400.jpg"
+  },
+  "39": {
+    "birthday": "2002年9月28日",
+    "birthplace": "福岡",
+    "blood_type": "A型",
+    "constellation": "てんびん座",
+    "en": "HIYORI HAMAGISHI",
+    "furigana": "はまぎし ひより",
+    "height": "",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/b0c/0cfdd4ff403aa7fc758e6d4605f0f/400_320_102400.jpg"
+  },
+  "40": {
+    "birthday": "1999年4月27日",
+    "birthplace": "京都",
+    "blood_type": "A型",
+    "constellation": "おうし座",
+    "en": "KONOKA MATSUDA",
+    "furigana": "まつだ このか",
+    "height": "",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/46c/865727c35bd6c6efed05a07c10fe1/400_320_102400.jpg"
+  },
+  "41": {
+    "birthday": "1998年4月28日",
+    "birthplace": "東京",
+    "blood_type": "A型",
+    "constellation": "おうし座",
+    "en": "MANAMO MIYATA",
+    "furigana": "みやた まなも",
+    "height": "",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/7fe/6de893e1d7e2e9e1633791f060cdf/400_320_102400.jpg"
+  },
+  "42": {
+    "birthday": "2000年2月24日",
+    "birthplace": "埼玉",
+    "blood_type": "不明",
+    "constellation": "うお座",
+    "en": "MIHO WATANABE",
+    "furigana": "わたなべ みほ",
+    "height": "",
+    "profile_img_url": "http://cdn.keyakizaka46.com/images/14/e4e/2a1dc6f2074cd7401651be375f3c9/400_320_102400.jpg"
+  }
+}
