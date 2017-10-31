@@ -114,7 +114,14 @@ class Keyaki:
 
     def artist(self, ct=None):
         if ct is None:
-            return  # TODO
+            result = {}
+            for i in range(1, self.MAXIMUM_CT+1):
+                ct = self.convert_ct(i)
+                try:
+                    result[ct] = self.parse_artist(self.get_artist(ct))
+                except Exception as e:
+                    print(e)
+            return result
         else:
             ct = self.convert_ct(ct)
             return self.parse_artist(self.get_artist(ct))
