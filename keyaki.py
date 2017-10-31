@@ -31,6 +31,15 @@ class Keyaki:
             print("Invalid value of ct")
             raise
 
+    @staticmethod
+    def dump_as_json(data, path=None):
+        import json
+        kwargs = {"indent": 2, "ensure_ascii": False, "sort_keys": True}
+        if path:
+            return json.dump(data, open(path, "wt"), **kwargs)
+        else:
+            return json.dumps(data, **kwargs)
+
     def _convert_href_to_url_and_extract_id(self, input_dict):
         import copy
         result_dict = copy.deepcopy(input_dict)
@@ -199,14 +208,6 @@ class Keyaki:
             except Exception as e:
                 print(e)
         return profiles
-
-    def dump_as_json(self, data, path=None):
-        import json
-        kwargs = {"indent": 2, "ensure_ascii": False, "sort_keys": True}
-        if path:
-            return json.dump(data, open(path, "wt"), **kwargs)
-        else:
-            return json.dumps(data, **kwargs)
 
 if __name__ == "__main__":
     keyaki = Keyaki()
