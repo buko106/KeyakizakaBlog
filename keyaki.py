@@ -198,21 +198,10 @@ class Keyaki:
             "en": en,
         }
 
-    def get_artists_profile(self, max_ct):
-        profiles = {}
-        for i in range(1, max_ct+1):
-            ct = "%02d" % i
-            try:
-                member = keyaki.parse_artist(keyaki.get_artist(ct))
-                profiles[ct] = member
-            except Exception as e:
-                print(e)
-        return profiles
-
 if __name__ == "__main__":
     keyaki = Keyaki()
     resp = keyaki.get_diary_detail(sys.argv[1])
     detail = keyaki.parse_diary_detail(resp)
     print(sorted(detail.items()))
 
-    keyaki.dump_as_json(keyaki.get_artists_profile(42), "members.json")
+    keyaki.dump_as_json(keyaki.artist(), "members.json")
