@@ -18,6 +18,7 @@ class Keyaki:
         self.ENTRYPOINT_DIARY_DETAIL = self.ENTRYPOINT_PREFIX + "/diary/detail"
         self.MAXIMUM_CT = 42
 
+    # utils
     @staticmethod
     def text_to_soup(text):
         return BeautifulSoup(text, "html.parser")
@@ -53,6 +54,7 @@ class Keyaki:
         response.raise_for_status()
         return response
 
+    # getter
     def get_diary_detail(self, id):
         try:
             id = str(int(id))
@@ -68,49 +70,6 @@ class Keyaki:
         response = self.get(url, params=params)
         return response
 
-    def _get_global_latest_diary(self):
-        url = self.ENTRYPOINT_DIARY_MEMBER
-        return self.get(url)
-
-    def _get_latest_diary_by_ct(self, ct):
-        ct = self.convert_ct(ct)
-        url = self.ENTRYPOINT_DIARY_MEMBER + "/" + "list"
-        params = {
-            "ima": "0000",
-            "ct": ct,
-        }
-        return self.get(url, params=params)
-
-    def _parse_diary_member_list(self, response):
-        soup = self.text_to_soup(response.text)
-        box_ttl = soup.find(attrs={"class": "box-ttl"})
-        href = box_ttl.h3.a["href"]
-        title = box_ttl.h3.a.string
-        return {
-            "href": href,
-            "title": title,
-        }
-
-    def _parse_global_latest_diary(self, response):
-        soup = self.text_to_soup(response.text)
-        slider = soup.find("div", attrs={"class": "slider"})
-        return {
-            "href": slider.ul.li.a["href"],
-            "title": slider.ul.li.a.string,
-        }
-
-    def latest_diary(self, ct=None):
-        if ct is None:
-            result = self._parse_global_latest_diary(
-                self._get_global_latest_diary()
-            )
-            return self._convert_href_to_url_and_extract_id(result)
-        else:
-            result = self._parse_diary_member_list(
-                self._get_latest_diary_by_ct(ct)
-            )
-            return self._convert_href_to_url_and_extract_id(result)
-
     def get_artist(self, ct):
         ct = self.convert_ct(ct)
         url = self.ENTRYPOINT_ARTIST + "/" + ct
@@ -121,20 +80,11 @@ class Keyaki:
         response = self.get(url, params=params)
         return response
 
-    def artist(self, ct=None):
-        if ct is None:
-            result = {}
-            for i in range(1, self.MAXIMUM_CT+1):
-                ct = self.convert_ct(i)
-                try:
-                    result[ct] = self.parse_artist(self.get_artist(ct))
-                except Exception as e:
-                    print(e)
-            return result
-        else:
-            ct = self.convert_ct(ct)
-            return self.parse_artist(self.get_artist(ct))
+    def _get_global_latest_diary(self):
+        url = self.ENTRYPOINT_DIARY_MEMBER
+        return self.get(url)
 
+    # parser
     def parse_diary_detail(self, response):
         soup = self.text_to_soup(response.text)
         box_article = soup.find(attrs={"class": "box-article"})
@@ -197,6 +147,62 @@ class Keyaki:
             "furigana": furigana,
             "en": en,
         }
+
+    def _get_latest_diary_by_ct(self, ct):
+        ct = self.convert_ct(ct)
+        url = self.ENTRYPOINT_DIARY_MEMBER + "/" + "list"
+        params = {
+            "ima": "0000",
+            "ct": ct,
+        }
+        return self.get(url, params=params)
+
+    def _parse_diary_member_list(self, response):
+        soup = self.text_to_soup(response.text)
+        box_ttl = soup.find(attrs={"class": "box-ttl"})
+        href = box_ttl.h3.a["href"]
+        title = box_ttl.h3.a.string.strip()
+        return {
+            "href": href,
+            "title": title,
+        }
+
+    def _parse_global_latest_diary(self, response):
+        soup = self.text_to_soup(response.text)
+        slider = soup.find("div", attrs={"class": "slider"})
+        href = slider.ul.li.a["href"]
+        title = slider.ul.li.p.string.strip()
+        return {
+            "href": href,
+            "title": title,
+        }
+
+    # API
+    def latest_diary(self, ct=None):
+        if ct is None:
+            result = self._parse_global_latest_diary(
+                self._get_global_latest_diary()
+            )
+            return self._convert_href_to_url_and_extract_id(result)
+        else:
+            result = self._parse_diary_member_list(
+                self._get_latest_diary_by_ct(ct)
+            )
+            return self._convert_href_to_url_and_extract_id(result)
+
+    def artist(self, ct=None):
+        if ct is None:
+            result = {}
+            for i in range(1, self.MAXIMUM_CT+1):
+                ct = self.convert_ct(i)
+                try:
+                    result[ct] = self.parse_artist(self.get_artist(ct))
+                except Exception as e:
+                    print(e)
+            return result
+        else:
+            ct = self.convert_ct(ct)
+            return self.parse_artist(self.get_artist(ct))
 
 if __name__ == "__main__":
     keyaki = Keyaki()
