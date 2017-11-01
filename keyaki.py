@@ -111,6 +111,7 @@ class Keyaki:
         ct = name.a["href"].split("=")[-1]
         id = og_url["content"].split("=")[-1]
         return {
+            "response": response,
             "date": date,
             "datetime": dt,
             "images": image_urls,
@@ -152,6 +153,7 @@ class Keyaki:
 
         return {
             **dl_dict,
+            "response": response,
             "profile_img_url": profile_img_url,
             "furigana": furigana,
             "en": en,
@@ -163,6 +165,7 @@ class Keyaki:
         href = box_ttl.h3.a["href"]
         title = box_ttl.h3.a.string.strip()
         return {
+            "response": response,
             "href": href,
             "title": title,
         }
@@ -173,6 +176,7 @@ class Keyaki:
         href = slider.ul.li.a["href"]
         title = slider.ul.li.p.string.strip()
         return {
+            "response": response,
             "href": href,
             "title": title,
         }
