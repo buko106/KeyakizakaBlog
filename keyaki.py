@@ -84,6 +84,15 @@ class Keyaki:
         url = self.ENTRYPOINT_DIARY_MEMBER
         return self.get(url)
 
+    def _get_latest_diary_by_ct(self, ct):
+        ct = self.convert_ct(ct)
+        url = self.ENTRYPOINT_DIARY_MEMBER + "/" + "list"
+        params = {
+            "ima": "0000",
+            "ct": ct,
+        }
+        return self.get(url, params=params)
+
     # parser
     def parse_diary_detail(self, response):
         soup = self.text_to_soup(response.text)
@@ -148,15 +157,6 @@ class Keyaki:
             "en": en,
         }
 
-    def _get_latest_diary_by_ct(self, ct):
-        ct = self.convert_ct(ct)
-        url = self.ENTRYPOINT_DIARY_MEMBER + "/" + "list"
-        params = {
-            "ima": "0000",
-            "ct": ct,
-        }
-        return self.get(url, params=params)
-
     def _parse_diary_member_list(self, response):
         soup = self.text_to_soup(response.text)
         box_ttl = soup.find(attrs={"class": "box-ttl"})
@@ -178,6 +178,11 @@ class Keyaki:
         }
 
     # API
+    def diary_detail(self, id):
+        return self.parse_diary_detail(
+            self.get_diary_detail(id)
+        )
+
     def latest_diary(self, ct=None):
         if ct is None:
             result = self._parse_global_latest_diary(
