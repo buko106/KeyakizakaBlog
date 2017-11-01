@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 
 class Keyaki:
     """
-    Method whose name begins with "get" actualy creates HTTP request,
+    Method whose name begins with "get" actually creates HTTP request,
     and returns a response. Method whose name begins with "parse" converts
     response to a dict including infomation obtaind from a response.
     """
