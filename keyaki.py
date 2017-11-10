@@ -35,7 +35,7 @@ class Keyaki:
     @staticmethod
     def dump_as_json(data, path=None):
         import json
-        kwargs = {"indent": 2, "ensure_ascii": False, "sort_keys": True}
+        kwargs = {"indent": 2, "ensure_ascii": False, "sort_keys": True, "default": (lambda x: None) }
         if path:
             return json.dump(data, open(path, "wt"), **kwargs)
         else:
