@@ -35,6 +35,12 @@ class Keyaki:
     @staticmethod
     def dump_as_json(data, path=None):
         import json
+        # removing response
+        if "response" in data: del data["response"]
+        for _, member in data.items():
+            if "response" in member:
+                del member["response"]
+
         kwargs = {"indent": 2, "ensure_ascii": False, "sort_keys": True, "default": (lambda x: None) }
         if path:
             return json.dump(data, open(path, "wt"), **kwargs)
